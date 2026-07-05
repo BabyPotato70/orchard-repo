@@ -6,9 +6,9 @@ import {
   Clock,
   Send,
   CheckCircle,
-  Instagram,
-  Facebook,
-  Youtube,
+  // Instagram,
+  // Facebook,
+  // Youtube,
 } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 
@@ -56,11 +56,11 @@ const Contact = () => {
     },
   ];
 
-  const socials = [
-    { Icon: Instagram, label: "Instagram" },
-    { Icon: Facebook, label: "Facebook" },
-    { Icon: Youtube, label: "YouTube" },
-  ];
+  // const socials = [
+  //   { Icon: Instagram, label: "Instagram" },
+  //   { Icon: Facebook, label: "Facebook" },
+  //   { Icon: Youtube, label: "YouTube" },
+  // ];
 
   return (
     <div className="page-transition pt-24 pb-24">
@@ -233,7 +233,7 @@ const Contact = () => {
             {/* Socials Card */}
             <div className="rounded-2xl border border-white/5 bg-neutral-900/30 p-6">
               <h3 className="text-sm font-medium mb-3">Follow Us</h3>
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 {socials.map(({ Icon, label }) => (
                   <a
                     key={label}
@@ -244,7 +244,7 @@ const Contact = () => {
                     <span className="hidden sm:inline">{label}</span>
                   </a>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

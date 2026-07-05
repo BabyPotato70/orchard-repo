@@ -4,9 +4,9 @@ import {
   MapPin,
   Phone,
   Mail,
-  Instagram,
-  Facebook,
-  Youtube,
+  // Instagram,
+  // Facebook,
+  // Youtube,
 } from "lucide-react";
 import { navLinks } from "../data/Content";
 
@@ -33,7 +33,7 @@ const Footer = () => {
               the heart of Jubbal valley at an altitude of 6,500 ft, where crisp
               mountain air and pristine water create the finest fruit.
             </p>
-            <div className="flex items-center gap-4 mt-6">
+            {/* <div className="flex items-center gap-4 mt-6">
               {[
                 { Icon: Instagram, label: "Instagram" },
                 { Icon: Facebook, label: "Facebook" },
@@ -47,7 +47,7 @@ const Footer = () => {
                   <Icon size={14} />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
