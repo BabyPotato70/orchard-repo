@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
-import { produceSteps, boxTypes } from "../data/content";
+import { produceSteps, boxTypes } from "../data/Content";
 
 const Produce = () => {
   const packingSeeds = [

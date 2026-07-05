@@ -1,7 +1,7 @@
 import React from "react";
 import { Heart, Sprout, Users, Award } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
-import { timeline } from "../data/content";
+import { timeline } from "../data/Content";
 
 const values = [
   {

@@ -13,7 +13,7 @@ import {
   Phone,
 } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
-import { appleVarieties } from "../data/content";
+import { appleVarieties } from "../data/Content";
 
 const Home = () => {
   return (

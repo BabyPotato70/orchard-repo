@@ -1,7 +1,7 @@
 import React from "react";
 import { Mountain, CloudRain, TreePine } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
-import { seasons } from "../data/content";
+import { seasons } from "../data/Content";
 
 const orchardInfo = [
   {

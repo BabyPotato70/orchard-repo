@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Apple } from "lucide-react";
-import { navLinks } from "../data/content";
+import { navLinks } from "../data/Content";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

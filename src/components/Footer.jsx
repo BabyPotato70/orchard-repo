@@ -8,7 +8,7 @@ import {
   Facebook,
   Youtube,
 } from "lucide-react";
-import { navLinks } from "../data/content";
+import { navLinks } from "../data/Content";
 
 const Footer = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Eye, X, MapPin, Calendar } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
-import { appleVarieties } from "../data/content";
+import { appleVarieties } from "../data/Content";
 
 const Gallery = () => {
   const [selected, setSelected] = useState(null);
