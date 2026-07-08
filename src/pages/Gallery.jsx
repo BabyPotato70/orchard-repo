@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Eye, X, MapPin, Calendar } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { appleVarieties } from "../data/Content";
+import { createPortal } from "react-dom";
 
 const Gallery = () => {
   const [selected, setSelected] = useState(null);
@@ -51,49 +52,51 @@ const Gallery = () => {
       </div>
 
       {/* Modal */}
-      {selected && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-6"
-          onClick={() => setSelected(null)}
-        >
-          <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+      {selected &&
+        createPortal(
           <div
-            className="relative bg-[#111] border border-white/10 rounded-2xl max-w-lg w-full overflow-hidden glow-blue-strong"
-            onClick={(e) => e.stopPropagation()}
+            className="fixed inset-0 z-[9999] flex items-center justify-center p-10"
+            onClick={() => setSelected(null)}
           >
-            <div className="relative h-72">
-              <img
-                src={selected.image}
-                alt={selected.name}
-                className="w-full h-full object-cover"
-              />
-              <div
-                className={`absolute inset-0 bg-gradient-to-t ${selected.color}`}
-              />
-              <button
-                onClick={() => setSelected(null)}
-                className="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center hover:bg-black/70 transition-colors"
-              >
-                <X size={14} />
-              </button>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-medium">{selected.name}</h3>
-              <p className="text-sm text-neutral-400 mt-3 leading-relaxed">
-                {selected.desc}
-              </p>
-              <div className="flex items-center gap-4 mt-6 pt-4 border-t border-white/5">
-                <div className="flex items-center gap-2 text-xs text-neutral-500">
-                  <MapPin size={12} /> Jubbal, HP
-                </div>
-                <div className="flex items-center gap-2 text-xs text-neutral-500">
-                  <Calendar size={12} /> Season: Aug–Nov
+            <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+            <div
+              className="relative bg-[#111] border border-white/10 rounded-2xl max-w-lg w-full overflow-hidden glow-blue-strong"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="relative h-72">
+                <img
+                  src={selected.image}
+                  alt={selected.name}
+                  className="w-full h-full object-cover"
+                />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-t ${selected.color}`}
+                />
+                <button
+                  onClick={() => setSelected(null)}
+                  className="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center hover:bg-black/70 transition-colors"
+                >
+                  <X size={14} />
+                </button>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-medium">{selected.name}</h3>
+                <p className="text-sm text-neutral-400 mt-3 leading-relaxed">
+                  {selected.desc}
+                </p>
+                <div className="flex items-center gap-4 mt-6 pt-4 border-t border-white/5">
+                  <div className="flex items-center gap-2 text-xs text-neutral-500">
+                    <MapPin size={12} /> Jubbal, HP
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-neutral-500">
+                    <Calendar size={12} /> Season: Aug–Nov
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      )}
+          </div>,
+          document.body,
+        )}
     </div>
   );
 };
