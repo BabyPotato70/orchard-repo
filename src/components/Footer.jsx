@@ -13,7 +13,7 @@ import { navLinks } from "../data/Content";
 const Footer = () => {
   return (
     <footer className="border-t border-white/5 bg-[#030303]">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
@@ -84,7 +84,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={14} className="shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 8800618248</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="shrink-0" />
@@ -94,9 +94,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-6 pt-4 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-neutral-600">
-            © 2025 Manohar Orchard Chhajpur. All rights reserved.
+            © 2026 Manohar Orchard Chhajpur. All rights reserved.
           </p>
           <p className="text-xs text-neutral-700">
             Grown with love in the Himalayas 🍎

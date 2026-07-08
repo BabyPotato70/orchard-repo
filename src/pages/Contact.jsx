@@ -6,11 +6,9 @@ import {
   Clock,
   Send,
   CheckCircle,
-  // Instagram,
-  // Facebook,
-  // Youtube,
 } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
+import Orchard from "../Assets/himachal-covered-apple-trees.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,7 +40,7 @@ const Contact = () => {
     {
       Icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210\n+91 87654 32109",
+      value: "+91 8800618248\n+91 7011655017",
     },
     {
       Icon: Mail,
@@ -63,7 +61,7 @@ const Contact = () => {
   // ];
 
   return (
-    <div className="page-transition pt-24 pb-24">
+    <div className="page-transition pt-24 pb-8">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading
           eyebrow="Get in Touch"
@@ -125,7 +123,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full h-12 px-4 bg-white/[0.03] border border-white/10 rounded-xl text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-white/30 transition-colors"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 8800618248"
                     />
                   </div>
                   <div>
@@ -211,7 +209,7 @@ const Contact = () => {
             {/* Visit Card */}
             <div className="rounded-2xl overflow-hidden border border-white/5">
               <img
-                src="https://picsum.photos/seed/jubbal-map-area-101/600/300.jpg"
+                src={Orchard}
                 alt="Location"
                 className="w-full h-48 object-cover opacity-60"
               />
@@ -231,9 +229,9 @@ const Contact = () => {
             </div>
 
             {/* Socials Card */}
-            <div className="rounded-2xl border border-white/5 bg-neutral-900/30 p-6">
+            {/* <div className="rounded-2xl border border-white/5 bg-neutral-900/30 p-6">
               <h3 className="text-sm font-medium mb-3">Follow Us</h3>
-              {/* <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 {socials.map(({ Icon, label }) => (
                   <a
                     key={label}
@@ -244,8 +242,8 @@ const Contact = () => {
                     <span className="hidden sm:inline">{label}</span>
                   </a>
                 ))}
-              </div> */}
-            </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </div>

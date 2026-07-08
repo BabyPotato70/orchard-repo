@@ -2,6 +2,13 @@ import React from "react";
 import { Mountain, CloudRain, TreePine } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { seasons } from "../data/Content";
+import photoSeeds1 from "../Assets/Apples0mountain.jpg";
+import photoSeeds2 from "../Assets/Main-top.jpg";
+import photoSeeds3 from "../Assets/Mountain-view.webp";
+import photoSeeds5 from "../Assets/moreimages2.jpg";
+import photoSeeds6 from "../Assets/moreimages3.webp";
+import photoSeeds4 from "../Assets/Mian-image.jpg";
+import MainImage from "../Assets/Main-one.jpg";
 
 const orchardInfo = [
   {
@@ -22,12 +29,12 @@ const orchardInfo = [
 ];
 
 const photoSeeds = [
-  "orchard-photo-81",
-  "orchard-trees-82",
-  "orchard-view-83",
-  "orchard-path-84",
-  "orchard-morning-85",
-  "orchard-sunset-86",
+  photoSeeds4,
+  photoSeeds2,
+  photoSeeds3,
+  photoSeeds1,
+  photoSeeds5,
+  photoSeeds6,
 ];
 
 const Orchard = () => {
@@ -43,7 +50,7 @@ const Orchard = () => {
         {/* Panorama */}
         <div className="rounded-2xl overflow-hidden mb-12 glow-blue">
           <img
-            src="https://picsum.photos/seed/orchard-panorama-61/1400/600.jpg"
+            src={MainImage}
             alt="Orchard Panorama"
             className="w-full h-[300px] md:h-[500px] object-cover"
           />
@@ -81,7 +88,7 @@ const Orchard = () => {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={`https://picsum.photos/seed/${s.seed}/500/400.jpg`}
+                  src={s.image}
                   alt={s.season}
                   className="w-full h-full object-cover img-zoom"
                 />
@@ -114,9 +121,7 @@ const Orchard = () => {
               } aspect-square`}
             >
               <img
-                src={`https://picsum.photos/seed/${seed}/${
-                  i === 0 ? "800" : "500"
-                }/${i === 0 ? "800" : "500"}.jpg`}
+                src={seed}
                 alt="Orchard"
                 className="w-full h-full object-cover img-zoom"
               />

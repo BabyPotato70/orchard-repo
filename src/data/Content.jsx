@@ -1,48 +1,78 @@
+import redApples from "../Assets/red-apples.avif";
+import goldenApples from "../Assets/Golden-apples.webp";
+import fujiApples from "../Assets/Fuji-Apples.jpg";
+import galaApples from "../Assets/Gala.jpg";
+import grannySmith from "../Assets/Granny-smith.jpg";
+import honeyCrips from "../Assets/Honey-crips.jpg";
+import ambriApples from "../Assets/Ambri-apples.jpg";
+import royalDelicious from "../Assets/Royal-delicious.jpg";
+import SpringSeason from "../Assets/Spring-season.jpg";
+import SummerSeason from "../Assets/Summer-season.jpg";
+import AutumnSeason from "../Assets/Autumn-season1.jpg";
+import WinterSeason from "../Assets/Winter-season.jpg";
+import Giftthree from "../Assets/3kg-gift.webp";
+import Gifttwo from "../Assets/20kg-wholesale.jpg";
+import Giftone from "../Assets/Reatilbox-5kg.jpg";
+
+import HandPicking from "../Assets/HandPicking.jpg";
+import Sorting from "../Assets/Apple-picking.webp";
+import Premium from "../Assets/Premium-sorting.webp";
+import ColdStroage from "../Assets/cold-Stroage.jpg";
+import Quality from "../Assets/Quality-checks.jpg";
+import Dispatch from "../Assets/Dispatch.jpg";
 export const appleVarieties = [
   {
     name: "Red Delicious",
+    image: redApples,
     desc: "Deep crimson skin with a classic sweet flavour. Our most popular variety, perfect for fresh eating.",
     color: "from-red-900/40 to-transparent",
     seed: "red-apple-1",
   },
   {
     name: "Golden Delicious",
+    image: goldenApples,
     desc: "Golden-yellow skin with a honey-sweet taste. Excellent for both eating fresh and baking.",
     color: "from-yellow-900/40 to-transparent",
     seed: "golden-apple-2",
   },
   {
     name: "Fuji",
+    image: fujiApples,
     desc: "Crisp and juicy with a perfect balance of sweet and tart. Originally from Japan, thrives in Himalayan climate.",
     color: "from-pink-900/40 to-transparent",
     seed: "fuji-apple-3",
   },
   {
     name: "Gala",
+    image: galaApples,
     desc: "Orange-red stripes over yellow background. Crisp, sweet, and aromatic — a favourite among children.",
     color: "from-orange-900/40 to-transparent",
     seed: "gala-apple-4",
   },
   {
     name: "Granny Smith",
+    image: grannySmith,
     desc: "Bright green with a tangy, sharp flavour. The chef's choice for pies and tarts.",
     color: "from-green-900/40 to-transparent",
     seed: "green-apple-5",
   },
   {
     name: "Honeycrisp",
+    image: honeyCrips,
     desc: "Explosively crisp with a mellow sweetness. Known for its satisfying crunch and juicy cells.",
     color: "from-red-800/40 to-transparent",
     seed: "honeycrisp-6",
   },
   {
     name: "Ambri",
+    image: ambriApples,
     desc: "Indigenous to Kashmir and Himachal, with a unique tangy-sweet flavour. A heritage variety.",
     color: "from-amber-900/40 to-transparent",
     seed: "ambri-apple-7",
   },
   {
     name: "Royal Delicious",
+    image: royalDelicious,
     desc: "Striking red with cream-white flesh. Rich, sweet flavour that intensifies after harvest.",
     color: "from-rose-900/40 to-transparent",
     seed: "royal-apple-8",
@@ -52,36 +82,42 @@ export const appleVarieties = [
 export const produceSteps = [
   {
     title: "Hand Picked",
+    image: HandPicking,
     desc: "Every apple is carefully hand-picked at peak ripeness to ensure optimal flavour and texture.",
     seed: "orchard-picking-11",
     icon: "Hand",
   },
   {
     title: "Sorting & Grading",
+    image: Sorting,
     desc: "Apples are sorted by size, colour, and quality using both traditional expertise and modern standards.",
     seed: "apple-sorting-12",
     icon: "Filter",
   },
   {
     title: "Premium Packing",
+    image: Premium,
     desc: "Carefully placed in food-grade corrugated boxes with foam inserts to prevent bruising.",
     seed: "apple-packing-13",
     icon: "Package",
   },
   {
     title: "Cold Storage",
+    image: ColdStroage,
     desc: "Stored at controlled temperatures to lock in freshness before dispatch to markets.",
     seed: "cold-storage-14",
     icon: "Thermometer",
   },
   {
     title: "Quality Check",
+    image: Quality,
     desc: "Final inspection ensures every box meets Manohar Orchard's premium quality standards.",
     seed: "quality-check-15",
     icon: "CheckCircle",
   },
   {
     title: "Dispatch",
+    image: Dispatch,
     desc: "Timely logistics ensure apples reach you fresh from our orchard to your doorstep.",
     seed: "apple-dispatch-16",
     icon: "Truck",
@@ -100,6 +136,7 @@ export const navLinks = [
 export const seasons = [
   {
     season: "Spring",
+    image: SpringSeason,
     months: "Mar – May",
     desc: "Blossom time. Apple trees burst into white and pink flowers. Bees pollinate, and we begin the critical task of thinning fruit for better size.",
     seed: "orchard-spring-71",
@@ -107,6 +144,7 @@ export const seasons = [
   },
   {
     season: "Summer",
+    image: SummerSeason,
     months: "Jun – Aug",
     desc: "Fruit develops and swells. We manage irrigation, apply organic manure, and monitor for pests using eco-friendly methods.",
     seed: "orchard-summer-72",
@@ -114,6 +152,7 @@ export const seasons = [
   },
   {
     season: "Autumn",
+    image: AutumnSeason,
     months: "Sep – Nov",
     desc: "Harvest season! The most busy and rewarding time. Different varieties are picked at their optimal ripeness.",
     seed: "orchard-autumn-73",
@@ -121,6 +160,7 @@ export const seasons = [
   },
   {
     season: "Winter",
+    image: WinterSeason,
     months: "Dec – Feb",
     desc: "Trees rest under snow. Pruning, soil preparation, and maintenance work ensures a healthy crop for the next year.",
     seed: "orchard-winter-74",
@@ -169,6 +209,7 @@ export const timeline = [
 export const boxTypes = [
   {
     name: "Retail Box",
+    image: Giftone,
     weight: "5 kg",
     desc: "Perfect for families and small orders. Individually wrapped apples in a premium printed box.",
     price: "₹450 – ₹700",
@@ -176,6 +217,7 @@ export const boxTypes = [
   },
   {
     name: "Wholesale Box",
+    image: Gifttwo,
     weight: "20 kg",
     desc: "Ideal for retailers and distributors. Sturdy corrugated box with foam layer protection.",
     price: "₹1,600 – ₹2,800",
@@ -183,6 +225,7 @@ export const boxTypes = [
   },
   {
     name: "Gift Box",
+    image: Giftthree,
     weight: "3 kg",
     desc: "Premium gifting option with ribbon, custom branding, and hand-selected premium apples.",
     price: "₹500 – ₹900",

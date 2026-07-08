@@ -3,21 +3,29 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { produceSteps, boxTypes } from "../data/Content";
+import packingSeeds1 from "../Assets/Pickingseed1.jpg";
+import packingSeeds2 from "../Assets/packingSeeds2.jpg";
+import packingSeeds3 from "../Assets/packingSeeds3.jpg";
+import packingSeeds4 from "../Assets/packingSeeds4.png";
+import packingSeeds5 from "../Assets/Summer-season.jpg";
+import packingSeeds6 from "../Assets/Main-top.jpg";
+import packingSeeds7 from "../Assets/packingSeeds7.jpg";
+import packingSeeds8 from "../Assets/packingSeeds8.jpg";
 
 const Produce = () => {
   const packingSeeds = [
-    "box-apple-pack-41",
-    "box-stack-42",
-    "box-closeup-43",
-    "box-warehouse-44",
-    "box-label-45",
-    "box-foam-46",
-    "box-loaded-47",
-    "box-fresh-48",
+    packingSeeds1,
+    packingSeeds2,
+    packingSeeds3,
+    packingSeeds4,
+    packingSeeds5,
+    packingSeeds6,
+    packingSeeds7,
+    packingSeeds8,
   ];
 
   return (
-    <div className="page-transition pt-24 pb-24">
+    <div className="page-transition pt-24 pb-10">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading
           eyebrow="Our Process"
@@ -36,7 +44,7 @@ const Produce = () => {
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src={`https://picsum.photos/seed/${step.seed}/600/400.jpg`}
+                    src={step.image}
                     alt={step.title}
                     className="w-full h-full object-cover img-zoom"
                   />
@@ -72,7 +80,7 @@ const Produce = () => {
               className="group rounded-xl overflow-hidden border border-white/5 aspect-square"
             >
               <img
-                src={`https://picsum.photos/seed/${seed}/500/500.jpg`}
+                src={seed}
                 alt="Packing"
                 className="w-full h-full object-cover img-zoom"
               />
@@ -95,7 +103,7 @@ const Produce = () => {
               >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src={`https://picsum.photos/seed/${box.seed}/600/400.jpg`}
+                    src={box.image}
                     alt={box.name}
                     className="w-full h-full object-cover img-zoom"
                   />

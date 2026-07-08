@@ -7,7 +7,7 @@ const Gallery = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className="page-transition pt-24 pb-24">
+    <div className="page-transition pt-24 pb-10">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading
           eyebrow="Apple Gallery"
@@ -24,7 +24,7 @@ const Gallery = () => {
             >
               <div className="relative h-64 overflow-hidden">
                 <img
-                  src={`https://picsum.photos/seed/${apple.seed}/600/600.jpg`}
+                  src={apple.image}
                   alt={apple.name}
                   className="w-full h-full object-cover img-zoom"
                 />
@@ -63,7 +63,7 @@ const Gallery = () => {
           >
             <div className="relative h-72">
               <img
-                src={`https://picsum.photos/seed/${selected.seed}/800/600.jpg`}
+                src={selected.image}
                 alt={selected.name}
                 className="w-full h-full object-cover"
               />

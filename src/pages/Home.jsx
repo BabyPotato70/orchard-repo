@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { appleVarieties } from "../data/Content";
+import backimgae from "../Assets/apple-tree-orchard-red.jpg";
+import ApplePicking from "../Assets/Apple-picking.webp";
 
 const Home = () => {
   return (
@@ -22,7 +24,7 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://picsum.photos/seed/himalayan-orchard-hero/1920/1080.jpg"
+            src={backimgae}
             alt="Orchard"
             className="w-full h-full object-cover opacity-50"
           />
@@ -71,7 +73,7 @@ const Home = () => {
       </section>
 
       {/* Stats */}
-      <section className="py-20 border-y border-white/5 bg-[#030303]">
+      <section className="py-5 border-y border-white/5 bg-[#030303]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -101,7 +103,7 @@ const Home = () => {
       </section>
 
       {/* Featured Apples */}
-      <section className="py-24 md:py-32">
+      <section className="py-15 md:py-22">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
             eyebrow="Our Finest"
@@ -116,7 +118,7 @@ const Home = () => {
               >
                 <div className="relative h-56 overflow-hidden">
                   <img
-                    src={`https://picsum.photos/seed/${apple.seed}/600/500.jpg`}
+                    src={apple.image}
                     alt={apple.name}
                     className="w-full h-full object-cover img-zoom"
                   />
@@ -156,7 +158,7 @@ const Home = () => {
       </section>
 
       {/* Why Us */}
-      <section className="py-24 bg-[#030303]">
+      <section className="py-10 bg-[#030303]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
@@ -205,7 +207,7 @@ const Home = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden glow-blue">
                 <img
-                  src="https://picsum.photos/seed/why-orchard-apple-22/700/900.jpg"
+                  src={ApplePicking}
                   alt="Our apples"
                   className="w-full h-[500px] object-cover"
                 />
@@ -222,7 +224,7 @@ const Home = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://picsum.photos/seed/cta-orchard-wide-33/1920/600.jpg"
